@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ViewStub
+        android:id="@+id/facebook_viewstub"
+        android:layout_width="match_parent"
+        android:layout="@layout/common_facebook_ad_view"
+        android:layout_height="wrap_content" />
+
+    <ViewStub
+        android:id="@+id/shuffle_ps_viewstub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/common_ps_ad_view" />
+
+    <ViewStub
+        android:id="@+id/admob_install_viewstub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/common_admob_install_ad_view">
+
+    </ViewStub>
+
+    <ViewStub
+        android:id="@+id/admob_content_viewstub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/common_admob_content_ad_view">
+
+    </ViewStub>
+</LinearLayout>

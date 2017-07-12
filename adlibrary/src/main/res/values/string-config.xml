@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--ad id-->
+    <string name="ad_id_publish">5117</string>
+    <!--<string name="ad_id_publish">5419</string>-->
+    <string name="ad_id_shuffle_page">1002339</string>
+    <!--<string name="ad_id_shuffle_page">1002022</string>-->
+</resources>

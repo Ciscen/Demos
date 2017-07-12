@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Shimmer">
+        <attr name="shader_disperse_factor" format="float" />
+        <attr name="angel" format="float" />
+        <attr name="speed_factor" format="float" />
+    </declare-styleable>
+</resources>

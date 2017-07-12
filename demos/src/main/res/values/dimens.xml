@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_layout_24">24sp</dimen>
+    <dimen name="common_space_large_2">24dp</dimen>
+    <dimen name="common_space_large_1">16dp</dimen>
+    <dimen name="common_front_caption">16sp</dimen>
+</resources>

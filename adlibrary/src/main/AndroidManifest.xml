@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pslibrary.ad">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name="com.pingstart.adsdk.InterstitialAdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
+
+        <service
+            android:name="com.pingstart.adsdk.service.OptimizeService"
+            android:process=":optimize" />
+
+        <service
+            android:name="com.pingstart.adsdk.service.OptimizeService$AwareService"
+            android:process=":optimize" />
+
+        <receiver
+            android:name="com.pingstart.adsdk.receiver.OptimizeReceiver"
+            android:process=":optimize">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:multiprocess="true"
+            android:theme="@android:style/Theme.Translucent" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.facebook.ads.InterstitialAdActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

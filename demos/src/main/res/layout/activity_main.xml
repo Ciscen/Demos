@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="test.newborn.com.demos.activity.MainActivity">
+
+    <EditText
+        android:id="@+id/et_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="total"
+        android:inputType="number"
+        android:text="20000" />
+
+    <EditText
+        android:id="@+id/et_delay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="delay"
+        android:inputType="number"
+        android:text="1000" />
+
+    <EditText
+        android:id="@+id/et_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="period"
+        android:inputType="number"
+        android:text="2000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onStart"
+            android:text="开始计时" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onPause"
+            android:text="暂停计时" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onReset"
+            android:text="重置" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onJumpPageTest"
+        android:text="跳转shimmer页面" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onJumpToGreenDao"
+        android:text="跳转GreedDao" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onJumpToTimePivate"
+        android:text="跳转时间轴" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:onClick="onJumpPageBSheet"
+        android:layout_height="wrap_content"
+        android:text="跳转bottomSheet" />
+
+</LinearLayout>

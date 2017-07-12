@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Demos</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="personal_settting_smart_mode">zidiongmoshitest</string>
+    <string name="workout_programing_auto_desc">骄傲到哪大开发更多</string>
+</resources>
